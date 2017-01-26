@@ -3,7 +3,7 @@ var questions = [
   ["How many ounces are in a cup?", "16"],
   ["What type of cellphone is currently the most popular throughout the world?", "iPhone"],
   ["What's Chicago's tallest building?", "Willis Tower"],
-  ["What is the name of the Chicago White Sox' new stadium?", "Guaranteed Rates"]
+  ["What is the name of the Chicago White Sox' new stadium?", "Guaranteed Rate"]
 ];
 var correctAnswers = 0;
 var question;
@@ -31,7 +31,7 @@ for(var i=0;i<questions.length;i++) {
   question = questions[i][0];
   answer = questions[i][1];
   response = prompt(question);
-  if(response === answer) {
+  if(response.toLowerCase() === answer.toLowerCase()) {
     correctAnswers += 1;
     correct.push(question);
   } else {
