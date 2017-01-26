@@ -13,6 +13,7 @@ var html;
 var correct = [];
 var wrong = [];
 
+// Creates print function to eliminate the usage of 'document.getElementById();
 function print(message) {
   var outputDiv = document.getElementById("output");
   outputDiv.innerHTML = message;
